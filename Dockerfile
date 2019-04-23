@@ -50,7 +50,7 @@ RUN chmod +x ~/start-hadoop.sh && \
 # format namenode
 RUN /usr/local/hadoop/bin/hdfs namenode -format
 
-CMD [ "sh", "-c", "/usr/sbin/sshd; bash"]
+CMD [ "sh", "-c", "/usr/sbin/sshd -D; bash"]
 
 # Hdfs ports
 EXPOSE 50010 50020 50070 50075 50090 8020 9000

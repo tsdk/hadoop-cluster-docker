@@ -5,6 +5,8 @@ echo "sudo $0 $@"
 exit
 fi
 
+#get pipework
+#git clone https://github.com/jpetazzo/pipework.git
 
 # the default node number is 3 
 N=${1:-3}

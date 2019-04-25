@@ -13,6 +13,7 @@ gw="192.168.82.2"
 # your localIP/mask
 net="192.168.82.100/24"
 
+yum install -y bridge-utils
 ip addr add $net dev br$N; \
 ip addr del $net dev eth0; \
 brctl addif br$N eth0; \
